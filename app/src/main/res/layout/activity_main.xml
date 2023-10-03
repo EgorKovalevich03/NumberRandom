@@ -342,6 +342,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+        <Button
+            android:id="@+id/btnLoadNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/fon_ol"
+            android:text="Загрузить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить ласт номер"
+            app:layout_constraintBottom_toTopOf="@+id/btnLoadNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
@@ -357,16 +378,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0-0 1-0 2-0 3-0 .... 15-0"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:layout_margin="4dp"/>
         <TextView
+            android:id="@+id/lastNumb"
             android:textColor="@color/black"
-            android:id="@+id/textAboutAllNumbers"
-            android:layout_weight="5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:layout_weight="5"
             android:layout_margin="4dp"
-            android:text="0-0 1-0 2-0 3-0 .... 15-0" />
+            android:text="----"
+            />
     </LinearLayout>
 </LinearLayout>
