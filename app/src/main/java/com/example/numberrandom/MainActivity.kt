@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     var spisok:MutableList<Int> = mutableListOf()
     var spisok2 = arrayListOf(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+    var spisok3 = arrayListOf(0,0,0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnDelete.setOnClickListener{
             val e = spisok.size -1
             spisok.removeAt(e)
+            val qqq = howLongDidNumNotAppear(spisok.reversed())
+            binding.textAboutLastNumber.text = qqq.toString()
         }
 
     }
@@ -48,6 +51,14 @@ class MainActivity : AppCompatActivity() {
 
         val qqq = howLongDidNumNotAppear(spisok.reversed())
         binding.textAboutLastNumber.text = qqq.toString()
+
+        var temp = spisok3[0]
+        var temp2 = spisok3[1]
+        spisok3[0] = a
+        spisok3[1] = temp
+        spisok3[2] = temp2
+
+        binding.lastNumberInput.text = spisok3.toString()
 
         binding.lastNumb.text = spisok2.toString()
     }

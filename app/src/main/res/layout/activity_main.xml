@@ -14,9 +14,10 @@
         android:background="#AE18784F">
 
         <Button
+            android:layout_marginLeft="16dp"
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:clickable="true"
             android:text="1"
@@ -26,9 +27,10 @@
 
 
         <Button
+            android:layout_marginLeft="16dp"
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:text="2"
             android:textSize="20sp"
@@ -37,9 +39,10 @@
 
 
         <Button
+            android:layout_marginLeft="16dp"
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:text="3"
             android:textSize="20sp"
@@ -48,9 +51,10 @@
 
 
         <Button
+            android:layout_marginLeft="16dp"
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:text="4"
             android:textSize="20sp"
@@ -59,9 +63,10 @@
 
 
         <Button
+            android:layout_marginLeft="16dp"
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:text="5"
             android:textSize="20sp"
@@ -70,9 +75,10 @@
 
 
         <Button
+            android:layout_marginLeft="16dp"
             android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:text="6"
             android:textSize="20sp"
@@ -82,19 +88,21 @@
 
         <Button
             android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/red"
             android:text="7"
+            android:layout_marginLeft="16dp"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button6" />
 
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="8"
             android:textSize="20sp"
@@ -102,9 +110,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="9"
             android:textSize="20sp"
@@ -112,9 +121,10 @@
             app:layout_constraintTop_toBottomOf="@+id/button8" />
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="10"
             android:textSize="20sp"
@@ -122,9 +132,10 @@
             app:layout_constraintTop_toBottomOf="@+id/button9" />
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button11"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="11"
             android:textSize="20sp"
@@ -132,9 +143,10 @@
             app:layout_constraintTop_toBottomOf="@+id/button10" />
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button12"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="12"
             android:textSize="20sp"
@@ -142,9 +154,10 @@
             app:layout_constraintTop_toBottomOf="@+id/button11" />
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button13"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="13"
             android:textSize="20sp"
@@ -152,9 +165,10 @@
             app:layout_constraintTop_toBottomOf="@+id/button12" />
 
         <Button
+            android:layout_marginRight="16dp"
             android:id="@+id/button14"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/black"
             android:text="14"
             android:textSize="20sp"
@@ -165,32 +179,44 @@
         <Button
             android:id="@+id/button0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:backgroundTint="@color/green"
             android:text="0"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button13" />
-
 
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Удалить ласт номер"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="80dp"
+            android:text="DEL"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:background="#78CC74"
+        android:layout_weight="3"
+        android:background="#4D326588"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastNumberInput"
+            android:text="---"
+            android:textSize="20sp"
+            android:layout_margin="4dp"
+            android:layout_weight="5"
+            />
 
         <TextView
             android:id="@+id/textAboutLastNumber"
@@ -200,7 +226,7 @@
             android:layout_weight="5"
             android:text="0-0 1-0 2-0 3-0 .... 15-0"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/lastNumb"
@@ -210,6 +236,7 @@
             android:layout_weight="5"
             android:text="----"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
+
     </LinearLayout>
 </LinearLayout>
