@@ -9,44 +9,47 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     var spisok:MutableList<Int> = mutableListOf()
-
-    var ee = ""
+    var spisok2 = arrayListOf(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button0.setOnClickListener{
-            spisok.add(0)
-
+        binding.apply {
+            button0.setOnClickListener{inNumberInList(0)}
+            button1.setOnClickListener{inNumberInList(1)}
+            button2.setOnClickListener{inNumberInList(2)}
+            button3.setOnClickListener{inNumberInList(3)}
+            button4.setOnClickListener{inNumberInList(4)}
+            button5.setOnClickListener{inNumberInList(5)}
+            button6.setOnClickListener{inNumberInList(6)}
+            button7.setOnClickListener{inNumberInList(7)}
+            button8.setOnClickListener{inNumberInList(8)}
+            button9.setOnClickListener{inNumberInList(9)}
+            button10.setOnClickListener{inNumberInList(10)}
+            button11.setOnClickListener{inNumberInList(11)}
+            button12.setOnClickListener{inNumberInList(12)}
+            button13.setOnClickListener{inNumberInList(13)}
+            button14.setOnClickListener{inNumberInList(14)}
         }
-        binding.button1.setOnClickListener{spisok.add(1)}
-        binding.button2.setOnClickListener{spisok.add(2)}
-        binding.button3.setOnClickListener{spisok.add(3)}
-        binding.button4.setOnClickListener{spisok.add(4)}
-        binding.button5.setOnClickListener{spisok.add(5)}
-        binding.button6.setOnClickListener{spisok.add(6)}
-        binding.button7.setOnClickListener{spisok.add(7)}
-        binding.button8.setOnClickListener{spisok.add(8)}
-        binding.button9.setOnClickListener{spisok.add(9)}
-        binding.button10.setOnClickListener{spisok.add(10)}
-        binding.button11.setOnClickListener{spisok.add(11)}
-        binding.button12.setOnClickListener{spisok.add(12) }
-        binding.button13.setOnClickListener{spisok.add(13) }
-        binding.button14.setOnClickListener{spisok.add(14) }
 
-
-        binding.btnLoadNumber.setOnClickListener{
-            val a = howLongDidNumNotAppear(spisok.reversed())
-            binding.textAboutLastNumber.text = a.toString()
-        }
 
         binding.btnDelete.setOnClickListener{
             val e = spisok.size -1
             spisok.removeAt(e)
         }
 
+    }
+
+    fun inNumberInList(a: Int){
+        spisok.add(a)
+        spisok2[a]++
+
+        val qqq = howLongDidNumNotAppear(spisok.reversed())
+        binding.textAboutLastNumber.text = qqq.toString()
+
+        binding.lastNumb.text = spisok2.toString()
     }
 
     fun howLongDidNumNotAppear(spisok:List<Int>):Map<String,Int>{
