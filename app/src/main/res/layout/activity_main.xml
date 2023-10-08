@@ -213,9 +213,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/lastNumberInput"
             android:text="@string/textForTextViewOne"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:layout_margin="4dp"
             android:layout_weight="5"
+
             tools:ignore="NestedWeights" />
 
         <TextView
