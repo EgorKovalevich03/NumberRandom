@@ -8,15 +8,25 @@ import com.example.numberrandom.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
+    //в этот список добавляется наша последовательность
     var spisok:MutableList<Int> = mutableListOf()
+
+    //храним кол-во выпавших чисел
     var spisok2 = arrayListOf(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+
+    //список для трёх последних выпавших чисел
     var spisok3 = arrayListOf(0,0,0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initViews()
 
+    }
+
+    //инициализируем кнопки
+    private fun initViews() {
         binding.apply {
             button0.setOnClickListener{inNumberInList(0)}
             button1.setOnClickListener{inNumberInList(1)}
@@ -33,19 +43,20 @@ class MainActivity : AppCompatActivity() {
             button12.setOnClickListener{inNumberInList(12)}
             button13.setOnClickListener{inNumberInList(13)}
             button14.setOnClickListener{inNumberInList(14)}
+            btnDelete.setOnClickListener{ delNum() }
         }
-
-
-        binding.btnDelete.setOnClickListener{
-            val e = spisok.size -1
-            spisok.removeAt(e)
-            val qqq = howLongDidNumNotAppear(spisok.reversed())
-            binding.textAboutLastNumber.text = qqq.toString()
-        }
-
     }
 
-    fun inNumberInList(a: Int){
+    // при нажатии кнопки R.id.btnDelete -> происходит удаление последнего доьбавлено числа с последовательность
+    private fun delNum() {
+        val e = spisok.size -1
+        spisok.removeAt(e)
+        val qqq = howLongDidNumNotAppear(spisok.reversed())
+        binding.textAboutLastNumber.text = qqq.toString()
+    }
+
+    //указываем количество всего выпаденых чисел за всё время , а так же три последних числа
+    private fun inNumberInList(a: Int){
         spisok.add(a)
         spisok2[a]++
 
@@ -63,7 +74,8 @@ class MainActivity : AppCompatActivity() {
         binding.lastNumb.text = spisok2.toString()
     }
 
-    fun howLongDidNumNotAppear(spisok:List<Int>):Map<String,Int>{
+    //основной tv который показывает сколько не выпадало конкретное число
+    private fun howLongDidNumNotAppear(spisok:List<Int>):Map<String,Int>{
         var howLongHasNum = mutableMapOf("0" to 0,"1" to 0,"2" to 0,"3" to 0,"4" to 0,"5" to 0,"6" to 0,"7" to 0,"8" to 0,"9" to 0,"10" to 0,"11" to 0
             ,"12" to 0,"13" to 0,"14" to 0)
 
