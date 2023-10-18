@@ -5,4 +5,5 @@
     <color name="red">#B50000</color>
     <color name="green">#40A800</color>
     <color name="fon_ol">#2D4E19</color>
+    <color name="background_main_window">#AE18784F</color>
 </resources>

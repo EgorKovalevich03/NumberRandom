@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RedButtonStyle">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BlackButtonStyle">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
