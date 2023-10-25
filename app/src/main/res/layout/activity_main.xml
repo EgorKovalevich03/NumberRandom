@@ -148,7 +148,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:background="#4D326588"
+        android:background="@color/background_main_window"
         android:orientation="vertical">
 
         <TextView
